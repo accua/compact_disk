@@ -15,4 +15,8 @@ class CD
   define_method(:save) do
     @@collection.push(self)
   end
+
+  define_singleton_method(:clear) do
+    @@collection = []
+  end
 end

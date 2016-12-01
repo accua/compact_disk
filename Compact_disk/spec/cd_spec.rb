@@ -23,4 +23,10 @@ describe(CD) do
       expect(CD.all()).to(eq([test_cd]))
     end
   end
+
+  describe(".clear") do
+    it("Will empty the class array.") do
+      expect(CD.clear()).to(eq([]))
+    end
+  end
 end
