@@ -15,4 +15,12 @@ describe(CD) do
       expect(CD.all()).to(eq([]))
     end
   end
+
+  describe("#save") do
+    it("Will push CD object to array for storage.") do
+      test_cd = CD.new("Cardboard Castles")
+      test_cd.save()
+      expect(CD.all()).to(eq([test_cd]))
+    end
+  end
 end

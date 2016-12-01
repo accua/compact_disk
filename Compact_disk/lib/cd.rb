@@ -11,4 +11,8 @@ class CD
   define_singleton_method(:all) do
     @@collection
   end
+
+  define_method(:save) do
+    @@collection.push(self)
+  end
 end
