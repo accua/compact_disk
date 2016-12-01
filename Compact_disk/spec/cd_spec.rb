@@ -9,4 +9,10 @@ describe(CD) do
       expect(test_cd.name()).to(eq("Cardboard Castles"))
     end
   end
+
+  describe(".all") do
+    it("Will return empty array at first") do
+      expect(CD.all()).to(eq([]))
+    end
+  end
 end
